@@ -57,7 +57,6 @@ export default function Map() {
             rel='noreferrer'></a>
         </div>
       </div>
-      {/* <img src={MapImg} alt="Map" /> */}
     </MapStyles>
   );
 }

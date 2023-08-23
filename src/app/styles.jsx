@@ -4,4 +4,4 @@ export const Wrapper = styled.section`
   background-color: ${props => props.theme.colors.background};
   padding: 4em;
 `;
-// export default Wrapper ;
+export default Wrapper;

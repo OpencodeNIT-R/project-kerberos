@@ -39,7 +39,7 @@ export const TeamCards = styled.div`
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-around;
-  column-gap: 176px;
+  column-gap: 100px;
   row-gap: 120px;
 `;
 

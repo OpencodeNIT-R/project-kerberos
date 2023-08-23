@@ -5,7 +5,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { MeetTheTeam, Socials, TeamCards, Wrapper, Heading } from './styles';
 import { Links } from './styles';
-// import img1 from '../../../data/TeamCardData/profile1.svg';
 import Heading4 from '../../shared/Typography/Heading4';
 
 const TeamCard = () => {

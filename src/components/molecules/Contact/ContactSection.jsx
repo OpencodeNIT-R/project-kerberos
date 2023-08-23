@@ -101,7 +101,7 @@ const ContactSection = () => {
           <TitleWrapper>
             <Heading3 color='black'>Still have questions?</Heading3>
             <p color='gray'>Feel free to reach out to us for more information.</p>
-            <Button type='button'>Success</Button>
+            <Button type='button'>Contact</Button>
           </TitleWrapper>
         </div>
         <ContactSectionWrapper>

@@ -1,46 +1,24 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { Body2, Heading2 } from '../../shared/Typography';
 
-const scaleAnimation = keyframes`
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.95);
-  }
-`;
-const scaleDownAnimation = keyframes`
-  0% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(1);
-  }
-`;
 export const MentorCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: 480px;
-  // &:hover {
-  //   animation: ${scaleAnimation} 0.3s ease-in-out forwards;
-  // }
-  // animation: ${scaleDownAnimation} 0.3s ease-in-out forwards;
+  width: 672px;
+  aspect-ratio: 4/3;
   border-radius: 10px;
-
+  object-fit: cover;
   img {
-    height: 370px;
-    width: 500px;
-    border-radius: 10px;
+    width: 522px;
+    aspect-ratio: 4/3;
+    border-radius: 40px;
     @media (max-width: 768px) {
-      height: 150px;
-      width: 180px;
+      width: 250px;
     }
   }
   @media (max-width: 768px) {
-    height: 250px;
     width: 230px;
   }
 `;

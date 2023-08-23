@@ -3,9 +3,11 @@ import styled, { keyframes } from 'styled-components';
 export const CarouselContainer = styled.div`
   overflow: hidden;
   position: relative;
-  height: 550px;
+  padding: 15px;
+  margin: 2% 0px;
+  height: 600px;
   border-color: #4b5563;
-  background-color: black;
+  background-color: #2a2a2a;
   width: 100%;
   @media (max-width: 768px) {
     height: 300px;

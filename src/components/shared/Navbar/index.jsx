@@ -1,5 +1,5 @@
 // import styled from 'styled-components';
-import { Contact, Content, List, NavChild, NavContainer } from './styles';
+import { Buttondiv, Contact, Content, Hamburger, Image, List, NavChild, NavContainer, Services } from './styles';
 // import { NavText } from '../Typography';
 const Navbar = () => {
   return (
@@ -10,12 +10,15 @@ const Navbar = () => {
           <List>Analytics Consulting</List>
           <List>About Us</List>
           <List>Resources</List>
-          <div>
+          <Services>
             <List>Services</List>
-            <img src='/images/Vector 9.png' alt='' />
-          </div>
+            <Image src='/images/Vector 9.png' alt='' style={{ marginLeft: '5px' }} />
+          </Services>
         </Content>
-        <Contact>Contact</Contact>
+        <Buttondiv>
+          <Contact>Contact</Contact>
+          <Hamburger src='/images/three-bars.png' alt='' />
+        </Buttondiv>
       </NavChild>
     </NavContainer>
   );

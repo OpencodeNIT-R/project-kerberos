@@ -28,7 +28,7 @@ const InfoWrapper = styled.div`
   flex-direction: column;
 `;
 
-export default function ContactInfoItem({ icon = <MdPlace />, title = 'Title', text = 'this is an info' }) {
+export default function ContactInfoItem({ icon = <MdPlace />, title = 'Title', text = 'this is Text' }) {
   return (
     <ItemStyles>
       <IconWrapper>{icon}</IconWrapper>

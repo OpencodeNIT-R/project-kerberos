@@ -4,7 +4,7 @@ import { CardContainer, CardTitle, ImageContainer } from './styles';
 const NewsletterCard = ({ title, description, category, type, id, image }) => {
   return (
     <CardContainer id={id}>
-      <ImageContainer src={image} alt={title} />
+      <ImageContainer src={image} alt={title} draggable={false} />
       <CardTitle transform='uppercase'>
         <span>{category}</span> / {type}
       </CardTitle>

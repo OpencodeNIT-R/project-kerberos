@@ -18,7 +18,7 @@ const Swiper = ({ data }) => {
   const { handleTouchEnd, handleTouchMove, handleTouchStart } = useSwipe({
     onSwipeLeft: () => handleSwipe('left'),
     onSwipeRight: () => handleSwipe('right'),
-    minDistance: 100,
+    minDistance: 50,
   });
 
   return (

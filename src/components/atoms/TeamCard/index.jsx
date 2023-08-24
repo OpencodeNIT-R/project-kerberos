@@ -6,75 +6,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { MeetTheTeam, Socials, TeamCards, Wrapper, Heading } from './styles';
 import { Links } from './styles';
 import Heading4 from '../../shared/Typography/Heading4';
+import TeamData from '../../../data/TeamCardData/TeamData.json';
 
 const TeamCard = () => {
-  const team = [
-    {
-      name: 'Ayush',
-      Position: 'President',
-      imagesrc: 'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1692779040/profile1_an3kgl.svg',
-      Instagram: '',
-      LinkedIn: '',
-      Twitter: '',
-    },
-    {
-      name: 'Swadin',
-      Position: 'Vice-President',
-      imagesrc: 'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1692779040/profile1_an3kgl.svg',
-      Instagram: '',
-      LinkedIn: '',
-      Twitter: '',
-    },
-    {
-      name: 'Kishan',
-      Position: 'Manager',
-      imagesrc: 'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1692779040/profile1_an3kgl.svg',
-      Instagram: '',
-      LinkedIn: '',
-      Twitter: '',
-    },
-    {
-      name: 'Pradyumn',
-      Position: 'Member',
-      imagesrc: 'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1692779040/profile1_an3kgl.svg',
-      Instagram: '',
-      LinkedIn: '',
-      Twitter: '',
-    },
-    {
-      name: 'Adiya',
-      Position: 'Member',
-      imagesrc: 'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1692779040/profile1_an3kgl.svg',
-      Instagram: '',
-      LinkedIn: '',
-      Twitter: '',
-    },
-    {
-      name: 'Nutan',
-      Position: 'Member',
-      imagesrc: 'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1692779040/profile1_an3kgl.svg',
-      Instagram: '',
-      LinkedIn: '',
-      Twitter: '',
-    },
-    {
-      name: 'Tejash',
-      Position: 'Camera Man',
-      imagesrc: 'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1692779040/profile1_an3kgl.svg',
-      Instagram: '',
-      LinkedIn: '',
-      Twitter: '',
-    },
-    {
-      name: 'Aniket',
-      Position: 'Chaprasi',
-      imagesrc: 'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1692779040/profile1_an3kgl.svg',
-      Instagram: '',
-      LinkedIn: '',
-      Twitter: '',
-    },
-  ];
-
   return (
     <MeetTheTeam>
       <Heading>
@@ -82,7 +16,7 @@ const TeamCard = () => {
         <Heading4>Get to Know the talented individuals behind our club</Heading4>
       </Heading>
       <TeamCards>
-        {team.map(TeamMember => (
+        {TeamData.map(TeamMember => (
           <Wrapper key={TeamMember}>
             <img src={TeamMember.imagesrc} alt='Member' />
             <Heading4>{TeamMember.name}</Heading4>

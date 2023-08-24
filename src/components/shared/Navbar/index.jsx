@@ -3,7 +3,6 @@ import Sidebar from '../Sidebar';
 // import { useContext } from 'react'
 import { Link } from 'react-scroll';
 import { Buttondiv, Contact, Content, List, Logo, NavChild, NavContainer, Services, StyledHamburger } from './styles';
-// import { MenuContext } from '../../atoms/MenuContext';
 
 const Navbar = () => {
   const [shown, setShown] = useState(0);

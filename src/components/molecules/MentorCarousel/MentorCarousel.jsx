@@ -1,6 +1,6 @@
 import MentorBox from '../../atoms/MentorCard/MentorCard';
 import { CarouselContainer, CarouselTrack } from './styles';
-import { Mentors } from '../../../../config';
+import Mentors from '../../../data/Mentors';
 export default function MentorCarousel() {
   return (
     <CarouselContainer>

@@ -103,11 +103,21 @@ const FaqComponent = () => {
     
   ];
 
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState([]);
 
   const toggleFaq = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+    const newActiveIndexes=[...activeIndex];
+    //setActiveIndex(activeIndex === index ? null : index);
+   if(newActiveIndexes.includes(index)){
+    const indexToRemove=newActiveIndexes.indexOf(index);
+    newActiveIndexes.splice(indexToRemove,1);    
+   }
+    else{
+        newActiveIndexes.push(index);
+        }
+    setActiveIndex(newActiveIndexes);
+
+};
 
   return (
     <FaqContainer>
@@ -116,12 +126,12 @@ const FaqComponent = () => {
       <FaqLayout>
         {faqs.map((faq, index) => (
           <FaqItem
-            className={activeIndex === index ? 'active' : ''}
+            className={activeIndex.includes(index) ? 'active' : ''}
             key={index}
             onClick={() => toggleFaq(index)}
           >
             <div>{faq.question}</div>
-            <Answer active={activeIndex === index}>{faq.answer}</Answer>
+            <Answer active={activeIndex.includes(index)}>{faq.answer}</Answer>
           </FaqItem>
         ))}
       </FaqLayout>

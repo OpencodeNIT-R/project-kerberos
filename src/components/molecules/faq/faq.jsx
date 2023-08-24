@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Faq  from '../../../data/faq';
 
 const FaqContainer = styled.div`
   padding: 25px;

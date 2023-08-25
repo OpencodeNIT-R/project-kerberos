@@ -28,6 +28,20 @@ export const PageNavigation = styled.div`
   span.active {
     background-color: #000;
   }
+
+  @media (max-width: ${props => props.theme.breakpoints.md}) {
+    span {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}) {
+    span {
+      width: 12px;
+      height: 12px;
+    }
+  }
 `;
 
 export const NavButton = styled.button`
@@ -39,5 +53,19 @@ export const NavButton = styled.button`
   &:disabled {
     cursor: not-allowed;
     color: grey;
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.md}) {
+    svg {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}) {
+    svg {
+      width: 48px;
+      height: 48px;
+    }
   }
 `;

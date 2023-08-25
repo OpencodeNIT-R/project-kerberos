@@ -1,6 +1,4 @@
-import MentorCarousel from '../../components/molecules/MentorCarousel/MentorCarousel';
-import { Body2, Body3, Button, ButtonMeta, Heading1, Heading2, Heading3, Heading4, NavText } from '../../components/shared';
-import Body1 from '../../components/shared/Typography/Body1';
+import NewsLetterSection from '../../components/molecules/Newsletter';
 import { Container } from './styles';
 import Faq from '../../components/molecules/faq/faq';
 
@@ -21,7 +19,7 @@ const Playground = () => {
         <Button text='Primary Button' variant='secondary' />
       </Container>
       <MentorCarousel />
-      <Faq />
+      
     </>
   );
 };

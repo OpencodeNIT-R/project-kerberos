@@ -22,9 +22,7 @@ const Playground = () => {
         <Button text='Primary Button' variant='secondary' />
       </Container>
       <MentorCarousel />
-      <>
-       <Hero/>
-      </>
+      <Hero/>
     </>
   );
 };

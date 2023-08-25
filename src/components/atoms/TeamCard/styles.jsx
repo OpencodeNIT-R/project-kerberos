@@ -39,14 +39,14 @@ export const TeamCards = styled.div`
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-around;
-  column-gap: 100px;
-  row-gap: 120px;
+  column-gap: 40px;
+  row-gap: 40px;
 `;
 
 export const Heading = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 136px;
+  margin-bottom: 7%;
   gap: 24px;
 `;

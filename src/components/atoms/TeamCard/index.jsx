@@ -1,14 +1,15 @@
 import Body3 from '../../shared/Typography/Body3';
-import { Socials, TeamCards, Wrapper } from '../../molecules/TeamCard/styles';
-import { Links } from '../../molecules/TeamCard/styles';
+import { Socials, TeamCards, Wrapper } from './styles';
+import { Links } from './styles';
 import Heading4 from '../../shared/Typography/Heading4';
-import TeamData from '../../../data/TeamCardData/TeamData.json';
+import { TeamData } from '../../../data/TeamCardData/TeamData';
 import { Icon } from '@iconify/react';
 
 const TeamCard = () => {
+  const TeamDatas = TeamData;
   return (
     <TeamCards>
-      {TeamData.map(TeamMember => (
+      {TeamDatas.map(TeamMember => (
         <Wrapper key={TeamMember}>
           <img src={TeamMember.imagesrc} alt='Member' />
           <Heading4>{TeamMember.name}</Heading4>

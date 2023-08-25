@@ -1,5 +1,5 @@
 import Heading1 from '../../shared/Typography/Heading1';
-import { MeetTheTeam, Heading } from './styles';
+import { MeetTheTeam, Heading } from '../../atoms/TeamCard/styles';
 import Heading4 from '../../shared/Typography/Heading4';
 import TeamCard from '../../atoms/TeamCard';
 

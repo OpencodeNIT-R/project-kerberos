@@ -108,7 +108,9 @@ export const Navopen = styled.div`
   // opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
   // transform: translateY(${({ isOpen }) => (isOpen ? '0' : '-1vh')});
   // transition: opacity 0.3s ease, transform 0.3s ease;
-  // transition-duration: 450ms;
+  opacity: 1;
+  // transform: translateY('-1vh');
+  transition: all 2s ease-in;
   // transition-property: all;
   //   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   //   transition-duration: 450ms;

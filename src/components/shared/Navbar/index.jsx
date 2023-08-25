@@ -30,7 +30,7 @@ const Navbar = () => {
     <>
       <NavContainer>
         <NavChild>
-          <Logo src='/images/logo.png' alt='logo' />
+          <Logo src='/images/Navbar/logo.png' alt='logo' />
           <Content>
             <List>
               <Link to='about' spy={true} smooth={true} offset={-100} duration={500}>
@@ -50,7 +50,7 @@ const Navbar = () => {
             <Services>
               <List>
                 <Link to='faqs' spy={true} smooth={true} offset={-100} duration={500}>
-                  <NavText>Faqs</NavText>
+                  <NavText>FAQs</NavText>
                 </Link>
               </List>
             </Services>
@@ -68,7 +68,7 @@ const Navbar = () => {
         </NavChild>
       </NavContainer>
 
-      {shown ? <DropMenu isOpen={isOpen} close={closeSidebar} shown={shown} /> : null}
+      {shown ? <DropMenu close={closeSidebar} shown={shown} /> : null}
     </>
   );
 };

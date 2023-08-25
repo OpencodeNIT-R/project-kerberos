@@ -4,7 +4,7 @@ import { List } from '../Navbar/styles';
 
 const DropMenu = props => {
   return (
-    <Navopen style={{ color: '#6F0', fontFamily: 'Roboto,sans-serif' }}>
+    <Navopen style={{ color: '#6F0', fontFamily: 'Roboto,sans-serif', transform: '0.7s ease-out' }}>
       <List style={{ marginTop: '10vh' }}>
         <Link to='about' spy={true} smooth={true} offset={-100} duration={500} onClick={props.close}>
           About Us
@@ -23,7 +23,7 @@ const DropMenu = props => {
 
       <List style={{ marginTop: '10vh' }}>
         <Link to='faqs' spy={true} smooth={true} offset={-100} duration={500} onClick={props.close}>
-          Faqs
+          FAQs
         </Link>
       </List>
     </Navopen>

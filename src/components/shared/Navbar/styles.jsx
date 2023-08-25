@@ -107,7 +107,9 @@ export const Navopen = styled.div`
   vertically-align: center;
   // opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
   // transform: translateY(${({ isOpen }) => (isOpen ? '0' : '-1vh')});
-  // transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
   opacity: 1;
   // transform: translateY('-1vh');
   transition: all 2s ease-in;

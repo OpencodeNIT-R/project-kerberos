@@ -59,7 +59,7 @@ const Navbar = () => {
             <Contact className='contact'>
               <NavText>Contact</NavText>
             </Contact>
-            <Hamburger onClick={toggleMenu}>
+            <Hamburger onClick={toggleMenu} toggleMenu={toggleMenu}>
               <Bar active={isActive} />
               <Bar active={isActive} />
               <Bar active={isActive} />
@@ -68,7 +68,7 @@ const Navbar = () => {
         </NavChild>
       </NavContainer>
 
-      {shown ? <DropMenu close={closeSidebar} shown={shown} /> : null}
+      {shown ? <DropMenu close={closeSidebar} shown={shown} toggleMenu={toggleMenu} /> : null}
     </>
   );
 };

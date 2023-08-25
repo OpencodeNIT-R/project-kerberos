@@ -2,8 +2,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import Body3 from '../../shared/Typography/Body3';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Socials, TeamCards, Wrapper } from './styles';
-import { Links } from './styles';
+import { Socials, TeamCards, Wrapper } from '../../molecules/TeamCard/styles';
+import { Links } from '../../molecules/TeamCard/styles';
 import Heading4 from '../../shared/Typography/Heading4';
 import TeamData from '../../../data/TeamCardData/TeamData.json';
 

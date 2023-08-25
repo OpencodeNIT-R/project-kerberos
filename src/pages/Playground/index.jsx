@@ -18,7 +18,11 @@ const Playground = () => {
         <Button text='Primary Button' variant='primary' />
         <Button text='Primary Button' variant='secondary' />
       </Container>
+      <Faq />
       <MentorCarousel />
+    
+
+
       
     </>
   );

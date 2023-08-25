@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Faq  from '../../../data/faq';
+import FaqItem from '../../atoms/faq/FaqItem';
 
 const FaqContainer = styled.div`
   padding: 25px;
@@ -127,8 +128,11 @@ const FaqComponent = () => {
       <FaqLayout>
         {faqs.map((faq, index) => (
           <FaqItem
-            className={activeIndex.includes(index) ? 'active' : ''}
+           // className={activeIndex.includes(index) ? 'active' : ''}
             key={index}
+            faq={faq}
+            isActive={activeIndex.includes(index)}
+
             onClick={() => toggleFaq(index)}
           >
             <div>{faq.question}</div>

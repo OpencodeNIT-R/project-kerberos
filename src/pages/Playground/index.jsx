@@ -21,6 +21,7 @@ const Playground = () => {
         <Button text='Primary Button' variant='secondary' />
       </Container>
       <MentorCarousel />
+      <Faq />
     </>
   );
 };

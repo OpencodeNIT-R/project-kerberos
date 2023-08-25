@@ -1,4 +1,4 @@
-const HeroWrapper = styled.div`
+const HeroWrapper = styled.div `
   background-image: url(${wallpaper});
   background-size: cover;
   background-position: center;
@@ -8,7 +8,7 @@ const HeroWrapper = styled.div`
   justify-content: center;
 `;
 
-const HeroContent = styled.div`
+const HeroContent = styled.div `
   text-align: center;
   color: #fff;
   padding: 2rem;

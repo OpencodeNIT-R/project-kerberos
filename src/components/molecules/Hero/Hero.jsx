@@ -4,18 +4,19 @@ import img from './img.png';
 import wallpaper from './wallpaper.png';
 
 const Hero = () => {
-  return (
-    <HeroWrapper>
-      <HeroContent>
-          <img src={img} alt="Small Image" />
-      </HeroContent>
-    </HeroWrapper>
-  );
+    return (
+        <HeroWrapper>
+            <HeroContent>
+                <img src={img}
+                    alt="Small Image"/>
+            </HeroContent>
+        </HeroWrapper>
+    );
 };
 
 export default Hero;
 
-const HeroWrapper = styled.div`
+const HeroWrapper = styled.div `
   background-image: url(${wallpaper});
   background-size: cover;
   background-position: center;
@@ -25,7 +26,7 @@ const HeroWrapper = styled.div`
   justify-content: center;
 `;
 
-const HeroContent = styled.div`
+const HeroContent = styled.div `
   text-align: center;
   color: #fff;
   padding: 2rem;

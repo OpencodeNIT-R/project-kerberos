@@ -9,7 +9,10 @@ export default function MentorCarousel() {
           <MentorBox key={detailKey} imgUrl={Mentors[detailKey].imgUrl} imgTitle={Mentors[detailKey].title} />
         ))}
         {Object.keys(Mentors).map(detailKey => (
-          <MentorBox key={detailKey + '-2'} imgUrl={Mentors[detailKey].imgUrl} imgTitle={Mentors[detailKey].title} />
+          <MentorBox key={detailKey} imgUrl={Mentors[detailKey].imgUrl} imgTitle={Mentors[detailKey].title} />
+        ))}
+        {Object.keys(Mentors).map(detailKey => (
+          <MentorBox key={detailKey} imgUrl={Mentors[detailKey].imgUrl} imgTitle={Mentors[detailKey].title} />
         ))}
       </CarouselTrack>
     </CarouselContainer>

@@ -15,10 +15,16 @@ export const MentorCard = styled.div`
     aspect-ratio: 4/3;
     border-radius: 40px;
     @media (max-width: 768px) {
+      width: 380px;
+    }
+    @media (max-width: 576px) {
       width: 250px;
     }
   }
   @media (max-width: 768px) {
+    width: 480px;
+  }
+  @media (max-width: 576px) {
     width: 230px;
   }
 `;
@@ -26,13 +32,7 @@ export const MentorName = styled(Heading2)`
   color: #fff;
   margin-top: 20px;
   margin-bottom: 10px;
-  &:hover {
-    color: inherit;
-  }
 `;
 export const MentorDescription = styled(Body2)`
   color: #fff;
-  &:hover {
-    color: inherit;
-  }
 `;

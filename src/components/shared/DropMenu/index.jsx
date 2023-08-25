@@ -2,7 +2,7 @@ import { Navopen } from '../Navbar/styles';
 import { Link } from 'react-scroll';
 import { List } from '../Navbar/styles';
 
-const Sidebar = props => {
+const DropMenu = props => {
   return (
     <Navopen style={{ color: '#6F0', fontFamily: 'Roboto,sans-serif' }}>
       <List style={{ marginTop: '10vh' }}>
@@ -30,4 +30,4 @@ const Sidebar = props => {
   );
 };
 
-export default Sidebar;
+export default DropMenu;

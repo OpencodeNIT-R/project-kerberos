@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 // import Link from 'next/link';
+
 export const NavContainer = styled.nav`
   width: 100%;
   position: fixed;
@@ -15,7 +16,7 @@ export const NavContainer = styled.nav`
   position: relative;
   padding: 0 6vw 0 7vw;
   font-family: Roboto, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 
   @media only screen and (max-width: 520px) {
     box-shadow:
@@ -33,7 +34,7 @@ export const Logo = styled.img`
 `;
 export const NavChild = styled.nav`
     width: 100%; height: 135; , background: rgba(217, 217, 217, 0); display:flex; justify-content:space-between; align-items:center; z-index:9999;
-    font-weight:500
+    
     `;
 
 export const List = styled.li`
@@ -51,7 +52,7 @@ export const Content = styled.nav`
   display: flex;
 
   justify-content: space-between;
-  // margin-left: 2rem
+
   @media only screen and (max-width: 913px) {
     display: none;
     position: absolute;
@@ -69,14 +70,18 @@ export const Services = styled.nav`
 
 export const Contact = styled.button`
   background-color: #66ff00;
+  font-family: Roboto, sans-serif;
   border: none;
-  padding: 1vh;
-  width: 106px;
-  height: 38px;
+  // padding: 1vh;
+  padding: 12px 32px;
+
   cursor: pointer;
   &:hover {
     background-color: #245f02;
     transition: background-color 0.5s ease;
+  }
+  @media only screen and (max-width: 913px) {
+    font-size: 12px;
   }
 `;
 
@@ -84,62 +89,60 @@ export const Buttondiv = styled.div`
   display: inline-flex;
   align-items: center;
 `;
-export const StyledHamburger = styled.button`
-  height: 2em;
-  width: 2em;
-  background: inherit;
-  display: block;
-  padding: 0.5em;
-  border: 1px solid black;
-  position: relative;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  &::before,
-  &::after {
-    content: '';
-    background: black;
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    display: block;
-    left: 0;
-    transition: all 0.7s;
-    left: 3vh;
-  }
-  &:active,
-  &:focus {
-    outline-color: #fff;
-  }
-  &::before {
-    top: ${({ toggleMenu }) => (toggleMenu ? '12px' : '8px')};
-    transform: ${({ toggleMenu }) => (toggleMenu ? 'rotate(40deg)' : null)};
-  }
-  &::after {
-    width: ${({ toggleMenu }) => (toggleMenu ? '100%' : '80%')};
-    bottom: ${({ toggleMenu }) => (toggleMenu ? '12px' : '8px')};
-    transform: ${({ toggleMenu }) => (toggleMenu ? 'rotate(-40deg)' : null)};
-  }
-  @media all and (min-width: 913px) {
-    display: none;
-  }
-`;
+
 export const Navopen = styled.div`
   z-index: 100;
   height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-size: 2.5vh;
   width: 100vw;
   padding-right: 7vh;
   background-color: #2a2a2a;
   margin-top: 0;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
-  y-overflow: hidden;
+  overflow: hidden;
   vertically-align: center;
-  transition: all;
-  transition-duration: 1s;
-  transition-property: ease-in;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1) @media all and (min-width: 913px) {
+  // opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+  // transform: translateY(${({ isOpen }) => (isOpen ? '0' : '-1vh')});
+  // transition: opacity 0.3s ease, transform 0.3s ease;
+  // transition-duration: 450ms;
+  // transition-property: all;
+  //   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  //   transition-duration: 450ms;
+  @media all and (min-width: 913px) {
     display: none;
+  }
+`;
+
+export const Hamburger = styled.div`
+  display: inline-block;
+  cursor: pointer;
+  @media all and (min-width: 913px) {
+    display: none;
+  }
+`;
+
+export const Bar = styled.span`
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.7s;
+  margin-left: 3vh;
+
+  &:nth-child(1) {
+    transform: ${({ active }) => (active ? 'rotate(-45deg) translate(-5px, 6px)' : 'none')};
+  }
+
+  &:nth-child(2) {
+    opacity: ${({ active }) => (active ? 0 : 1)};
+  }
+
+  &:nth-child(3) {
+    transform: ${({ active }) => (active ? 'rotate(45deg) translate(-5px, -6px)' : 'none')};
   }
 `;

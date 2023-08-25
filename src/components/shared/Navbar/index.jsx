@@ -1,11 +1,14 @@
 import { useState } from 'react';
-import Sidebar from '../Sidebar';
+import DropMenu from '../DropMenu';
 // import { useContext } from 'react'
 import { Link } from 'react-scroll';
-import { Buttondiv, Contact, Content, List, Logo, NavChild, NavContainer, Services, StyledHamburger } from './styles';
+import { Bar, Buttondiv, Contact, Content, Hamburger, List, Logo, NavChild, NavContainer, Services } from './styles';
+import NavText from '../Typography/NavText';
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
   const [shown, setShown] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     if (shown === 0) {
       setShown(1);
@@ -14,6 +17,9 @@ const Navbar = () => {
       setShown(0);
       console.log('no');
     }
+
+    setIsActive(!isActive);
+    setIsOpen(!isOpen);
   };
 
   const closeSidebar = () => {
@@ -28,35 +34,41 @@ const Navbar = () => {
           <Content>
             <List>
               <Link to='about' spy={true} smooth={true} offset={-100} duration={500}>
-                About Us
+                <NavText>About Us</NavText>
               </Link>
             </List>
             <List>
               <Link to='team' spy={true} smooth={true} offset={-100} duration={500}>
-                Team
+                <NavText>Team</NavText>
               </Link>
             </List>
             <List>
               <Link to='resources' spy={true} smooth={true} offset={-100} duration={500}>
-                Resources
+                <NavText>Resources</NavText>
               </Link>
             </List>
             <Services>
               <List>
                 <Link to='faqs' spy={true} smooth={true} offset={-100} duration={500}>
-                  Faqs
+                  <NavText>Faqs</NavText>
                 </Link>
               </List>
             </Services>
           </Content>
           <Buttondiv>
-            <Contact className='contact'>Contact</Contact>
-            <StyledHamburger onClick={toggleMenu}></StyledHamburger>
+            <Contact className='contact'>
+              <NavText>Contact</NavText>
+            </Contact>
+            <Hamburger onClick={toggleMenu}>
+              <Bar active={isActive} />
+              <Bar active={isActive} />
+              <Bar active={isActive} />
+            </Hamburger>
           </Buttondiv>
         </NavChild>
       </NavContainer>
 
-      {shown ? <Sidebar close={closeSidebar} shown={shown} /> : null}
+      {shown ? <DropMenu isOpen={isOpen} close={closeSidebar} shown={shown} /> : null}
     </>
   );
 };

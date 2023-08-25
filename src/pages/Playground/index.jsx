@@ -1,6 +1,7 @@
 import { Body2, Body3, Button, ButtonMeta, Heading1, Heading2, Heading3, Heading4, NavText } from '../../components/shared';
 import Body1 from '../../components/shared/Typography/Body1';
 import { Container } from './styles';
+import Hero from '../components/molecules/Hero/Hero'
 
 const Playground = () => {
   return (

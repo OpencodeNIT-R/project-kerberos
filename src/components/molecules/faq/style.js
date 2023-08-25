@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const FaqContainer = styled.div`
+ export const FaqContainer = styled.div`
   padding: 25px;
 
   @media (max-width: 768px) {
@@ -8,7 +8,7 @@ const FaqContainer = styled.div`
   }
 `;
 
-const FaqHeading = styled.div`
+export const FaqHeading = styled.div`
 font-weight: 700;
 font-size: 54px;
 font-family:Roboto;
@@ -28,7 +28,7 @@ margin-bottom:160px;
 
 
 
-const Caption = styled.div`
+export const Caption = styled.div`
  margin-bottom:116px;
     font-size: 24px;
     text-align:left;
@@ -37,7 +37,7 @@ const Caption = styled.div`
 
 `;
 
-const FaqLayout = styled.div`
+export const FaqLayout = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -47,7 +47,7 @@ const FaqLayout = styled.div`
   }
 `;
 
-const FaqItem = styled.div`
+export const FaqItem = styled.div`
   background-color: #f0f0f0;
   width: 100%;
   display: flex;
@@ -66,7 +66,7 @@ const FaqItem = styled.div`
   }
 `;
 
-const Answer = styled.div`
+export const Answer = styled.div`
   font-size: 22px;
   padding-top: 16px;
   display: ${(props) => (props.active ? 'block' : 'none')};

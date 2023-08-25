@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Faq  from '../../../data/faq';
 import FaqItem from '../../atoms/faq/FaqItem';
+import FaqItem from '../../atoms/faq/FaqItem';
+import { FaqContainer,FaqHeading,Caption,FaqLayout, FaqItem, Answer } from './style';
 
 const FaqContainer = styled.div`
   padding: 25px;

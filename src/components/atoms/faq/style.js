@@ -1,8 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
-import { FaqItemContainer, Answer} from './style';
 
-const FaqItemContainer = styled.div`
+ export const FaqItemContainer = styled.div`
   background-color: #f0f0f0;
   width: 100%;
   display: flex;
@@ -21,19 +19,8 @@ const FaqItemContainer = styled.div`
   }
 `;
 
-const Answer = styled.div`
+export const Answer = styled.div`
   font-size: 22px;
   padding-top: 16px;
   display: ${(props) => (props.active ? 'block' : 'none')};
 `;
-
-const FaqItem = ({ faq, isActive, onClick }) => {
-  return (
-    <FaqItemContainer className={isActive ? 'active' : ''} onClick={onClick}>
-      <div>{faq.question}</div>
-      <Answer active={isActive}>{faq.answer}</Answer>
-    </FaqItemContainer>
-  );
-};
-
-export default FaqItem;

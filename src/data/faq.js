@@ -1,4 +1,4 @@
-export default{
+const faqData={
     0:{
         question: 'How can I join?',
       answer: 'ojwokfkfqkfpqkopqik',
@@ -28,3 +28,4 @@ export default{
 
 
 };
+export default faqData;

@@ -70,4 +70,5 @@ export const Answer = styled.div`
   font-size: 22px;
   padding-top: 16px;
   display: ${(props) => (props.active ? 'block' : 'none')};
+  text-align:left;
 `;

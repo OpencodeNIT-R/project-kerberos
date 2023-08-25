@@ -1,3 +1,4 @@
+
 import Navbar from '../../components/shared/Navbar';
 
 const Playground = () => {
@@ -5,6 +6,7 @@ const Playground = () => {
     <>
       <Navbar />
     </>
+
   );
 };
 

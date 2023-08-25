@@ -1,11 +1,9 @@
-import TwitterIcon from '@mui/icons-material/Twitter';
 import Body3 from '../../shared/Typography/Body3';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import { Socials, TeamCards, Wrapper } from '../../molecules/TeamCard/styles';
 import { Links } from '../../molecules/TeamCard/styles';
 import Heading4 from '../../shared/Typography/Heading4';
 import TeamData from '../../../data/TeamCardData/TeamData.json';
+import { Icon } from '@iconify/react';
 
 const TeamCard = () => {
   return (
@@ -17,13 +15,13 @@ const TeamCard = () => {
           <Body3>{TeamMember.Position}</Body3>
           <Socials>
             <Links href={TeamMember.Instagram}>
-              <InstagramIcon></InstagramIcon>
+              <Icon icon='mdi:instagram' width='30' height='30' />
             </Links>
             <Links href={TeamMember.LinkedIn}>
-              <LinkedInIcon></LinkedInIcon>
+              <Icon icon='mdi:linkedin' width='30' height='30' />
             </Links>
             <Links href={TeamMember.Twitter}>
-              <TwitterIcon></TwitterIcon>
+              <Icon icon='ri:twitter-x-fill' width='30' height='30' />
             </Links>
           </Socials>
         </Wrapper>

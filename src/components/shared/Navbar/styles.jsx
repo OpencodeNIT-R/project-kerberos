@@ -53,7 +53,7 @@ export const Content = styled.nav`
 
   justify-content: space-between;
 
-  @media only screen and (max-width: 913px) {
+  @media only screen and (max-width: 1028px) {
     display: none;
     position: absolute;
     background-size: cover;
@@ -122,7 +122,7 @@ export const Navopen = styled.div`
 export const Hamburger = styled.div`
   display: inline-block;
   cursor: pointer;
-  @media all and (min-width: 913px) {
+  @media all and (min-width: 1028px) {
     display: none;
   }
 `;

@@ -6,7 +6,8 @@ const faqData = {
 
   1: {
     question: 'What are the benefits?',
-    answer: 'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem',
+    answer:
+      'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem',
   },
 
   2: {

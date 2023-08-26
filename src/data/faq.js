@@ -10,7 +10,7 @@ const faqData = {
   },
   2: {
     question: 'What are the benefits?',
-    answer: 'kjhihqjfoqjq iuquhquihyqgyqtg',
+    answer: 'kjhihqjfoqjq iuquhquihyqgyqtggugggbhuyhibihybnihy',
   },
   3: {
     question: 'How often are events held?',

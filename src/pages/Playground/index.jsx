@@ -1,22 +1,20 @@
-import { Body2, Body3, Button, ButtonMeta, Heading1, Heading2, Heading3, Heading4, NavText } from '../../components/shared';
-import Body1 from '../../components/shared/Typography/Body1';
-import { Container } from './styles';
-
+// import { Body2, Body3, Button, ButtonMeta, Heading1, Heading2, Heading3, Heading4, NavText } from '../../components/shared';
+// import Body1 from '../../components/shared/Typography/Body1';
+//import { Container } from './styles';
+//import ResourceCard from "../../components/atoms/ResourceCard.jsx";
+//import ResourceData from "../../data/ResourceData.js";
+import ResourceSection from '../../components/molecules/ResourceSection.jsx';
+import styled from 'styled-components';
+const PlayContainer = styled.div`
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+`;
 const Playground = () => {
   return (
-    <Container>
-      <Heading1>Heading 1</Heading1>
-      <Heading2>Heading 2</Heading2>
-      <Heading3>Heading 3</Heading3>
-      <Heading4>Heading 4</Heading4>
-      <Body1>Body 1</Body1>
-      <Body2>Body 2</Body2>
-      <Body3>Body 3</Body3>
-      <ButtonMeta>Button Meta</ButtonMeta>
-      <NavText>Nav Text</NavText>
-      <Button text='Primary Button' variant='primary' />
-      <Button text='Primary Button' variant='secondary' />
-    </Container>
+    <PlayContainer>
+      <ResourceSection />
+    </PlayContainer>
   );
 };
 

@@ -1,5 +1,5 @@
-import ResourceData from '../../data/ResourceData.js';
-import ResourceCard from '../atoms/ResourceCard.jsx';
+import ResourceData from '../../../data/ResourceData.js';
+import ResourceCard from '../../atoms/ResourceCard/ResourceCard.jsx';
 export default function Casebook() {
   return (
     <>

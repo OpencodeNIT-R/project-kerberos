@@ -3,7 +3,7 @@
 //import { Container } from './styles';
 //import ResourceCard from "../../components/atoms/ResourceCard.jsx";
 //import ResourceData from "../../data/ResourceData.js";
-import ResourceSection from '../../components/molecules/ResourceSection.jsx';
+import ResourceSection from '../../components/molecules/ResourceSection/ResourceSection.jsx';
 import styled from 'styled-components';
 const PlayContainer = styled.div`
   width: 100%;
@@ -17,5 +17,4 @@ const Playground = () => {
     </PlayContainer>
   );
 };
-
 export default Playground;

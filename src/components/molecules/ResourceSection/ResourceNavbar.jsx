@@ -1,6 +1,3 @@
-//import React from 'react';
-
-// Libraries
 import styled from 'styled-components';
 
 const ResourceNavContainer = styled.div`
@@ -10,11 +7,9 @@ const ResourceNavContainer = styled.div`
     width: 100%;
   }
   width: 100%;
-  height: 50px;
   background: transparent;
   margin-bottom: 70px;
   border-bottom: 2px solid #000;
-
   display: flex;
   gap: 100px;
   align-items: center;
@@ -30,7 +25,6 @@ const ResourceNavItem = styled.h4`
 
   border-bottom: ${({ isActive }) => (isActive ? '3px solid #245F02' : '3px solid transparent')};
 
-  border-radius: 3px;
   transition:
     color 250ms ease 0s,
     border-bottom 250ms ease 0s;

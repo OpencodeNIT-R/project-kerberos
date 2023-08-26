@@ -1,18 +1,41 @@
-import Heading1 from '../shared/Typography/Heading1.jsx';
+import Heading1 from '../../shared/Typography/Heading1.jsx';
 import styled from 'styled-components';
 import { useState } from 'react';
 import ResourceNavbar from './ResourceNavbar.jsx';
 import Casebook from './Casebook.jsx';
 import Casedesk from './Casedesk.jsx';
 
+const SectionHeading = styled(Heading1)`
+  @media (min-width: 920px) {
+    text-align: left;
+    color: #1b1b1b;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72.905px;
+  }
+  text-align: center;
+  color: #1b1b1b;
+  font-size: 27.423px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+`;
 const ResourceItem = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 65px;
-  width: 100%;
-  height: 600px;
   overflow-y: scroll;
-  overflow-x: hidden;
+  gap: 25px;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: 920px) {
+    gap: 64px;
+    min-width: 600px;
+    height: 600px;
+  }
 `;
 
 const ResourceSectionContainer = styled.div`
@@ -20,12 +43,12 @@ const ResourceSectionContainer = styled.div`
   background: #cdcdcd;
   display: flex;
   flex-direction: column;
-  gap: 61px;
-  padding: 30px 129px;
+  gap: 20px;
+  padding: 8px;
   margin: 0 auto;
-  @media (max-width: 920px) {
+  @media (min-width: 920px) {
     gap: 40px;
-    padding: 20px;
+    padding: 33px 129px;
   }
 `;
 
@@ -70,7 +93,7 @@ export default function ResourceSection() {
 
   return (
     <ResourceSectionContainer>
-      <Heading1>Resources</Heading1>
+      <SectionHeading>Resources</SectionHeading>
       <MainContainer>
         <ResourceNavbar navItems={navItems} stage={stage} />
         <ResourceItem>{renderItems(stage)}</ResourceItem>

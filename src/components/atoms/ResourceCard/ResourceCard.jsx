@@ -1,50 +1,38 @@
-import Heading5 from '../shared/Typography/Heading5.js';
-import Body2 from '../shared/Typography/Body2.jsx';
+import Body2 from '../../shared/Typography/Body2.jsx';
 import styled from 'styled-components';
-import { Heading4 } from '../shared/index.js';
+import { Heading4 } from '../../shared/index.js';
 
 const ResourceContainer = styled.div`
   @media (min-width: 980px) {
     width: 70%;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 16px;
   }
-  @media (max-width: 480px) {
-    margin: auto;
-  }
-  width: 90%;
+
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
 `;
 
 const ResourceImage = styled.img`
-  @media (min-width: 980px) {
-    width: 35%;
+  @media (min-width: 780px) {
+    width: 256px;
   }
-  @media (max-width: 480px) {
-    width: 90%;
-  }
-  width: 45%;
+  width: 100px;
   margin: 0;
   padding: 0;
   object-fit: cover;
 `;
 const ResourceContent = styled.div`
   @media (min-width: 980px) {
-    width: 60%;
-    gap: 16px;
+    width: 700px;
+    gap: 24px;
   }
-  width: 90%;
+  width: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 8px;
-  align-items: flex-start;
+  gap: 9px;
   margin: auto 0;
-  overflow: hidden;
 `;
 
 const handleClick = link => {
@@ -52,14 +40,28 @@ const handleClick = link => {
     window.open(link, '_blank');
   };
 };
+
+const Subtitle = styled.p`
+  @media (min-width: 980px) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'Roboto', sans-serif;
+`;
 const ResourceCard = ({ title, subtitle1, subtitle2, image, alt, description, link }) => {
   return (
     <ResourceContainer>
       <ResourceImage src={image} alt={alt} />
       <ResourceContent>
-        <Heading5 style={{ color: '#245F02' }}>
+        <Subtitle style={{ color: '#245F02', textTransform: 'uppercase', wordWrap: 'break-word' }}>
           {subtitle1}/<span style={{ color: '#000000' }}>{subtitle2}</span>
-        </Heading5>
+        </Subtitle>
         <Heading4 onClick={handleClick(link)} style={{ cursor: 'pointer' }}>
           {title}
         </Heading4>

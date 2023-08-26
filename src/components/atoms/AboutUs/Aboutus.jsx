@@ -1,8 +1,8 @@
 import Heading2 from '../../shared/Typography/Heading2';
 import Body2 from '../../shared/Typography/Body2';
 import styled from 'styled-components';
-// import { AboutContent } from "../../../data/About";
-// import { AboutContent } from "../../../data/About";
+
+import { AboutContent } from '../../../data/About';
 
 const AboutUsSection = styled.section`
   display: flex;
@@ -36,7 +36,6 @@ const AboutUsImage = styled.img`
 const AboutUsText = styled.div`
   display: flex;
   flex-wrap: wrap;
-
   text-align: left;
   order: ${({ reverse }) => (reverse ? 1 : 2)};
 `;
@@ -52,7 +51,7 @@ const AboutUsBox3 = styled.div`
   text-align: left;
   order: ${({ reverse }) => (reverse ? 1 : 2)};
   width: 60%;
-  margin-right: 144px;
+  margin-right: 152px;
   display: flex;
   flex-direction: column;
 `;
@@ -60,44 +59,20 @@ const AboutUsBox3 = styled.div`
 const AboutUs = () => {
   return (
     <AboutUsSection>
-      <AboutUsRow>
-        <AboutUsBox1>
-          <AboutUsText reverse>
-            <Heading2 id='1'></Heading2>
-            <Body2>
-              Our club aims to provide comprehensive resources and support to help members thrive in the analytics and consulting
-              fields. With a focus on Knowledge sharing, networking, and skill development, we strive to create a community of
-              like-minded professionals dedicated to advancing their careers.
-            </Body2>
-          </AboutUsText>
-        </AboutUsBox1>
-
-        <AboutUsImage
-          reverse
-          src='https://res.cloudinary.com/dafdencvh/image/upload/v1693048482/kerbero%20project/image_12_it5577.png'
-          alt='Right Image'
-        />
-      </AboutUsRow>
-
-      <AboutUsRow>
-        <AboutUsImage
-          src='https://res.cloudinary.com/dafdencvh/image/upload/v1693048464/kerbero%20project/image_2_xmyc7y.png'
-          alt='Left Image'
-        />
-        <AboutUsBox1>
-          <AboutUsText>
-            <Heading2>Unlocking Insights and Driving Success through Analytics and Consulting</Heading2>
-            <Body2>
-              Our club is dedicated to empowering individuals and businesses with th knowledge and expertise in analytics and
-              consulting. Join us to stay ahead in this dynamic field.
-            </Body2>
-          </AboutUsText>
-        </AboutUsBox1>
-      </AboutUsRow>
-
+      {AboutContent.map(item => (
+        <AboutUsRow key={item.Id}>
+          <AboutUsBox1>
+            <AboutUsText reverse={item.Id % 2 === 0}>
+              <Heading2>{item.heading}</Heading2>
+              <Body2>{item.content}</Body2>
+            </AboutUsText>
+          </AboutUsBox1>
+          <AboutUsImage reverse={item.Id % 2 === 0} src={item.image} alt={item.heading} />
+        </AboutUsRow>
+      ))}
       <AboutUsRow>
         <AboutUsBox3>
-          <AboutUsText reverse>
+          <AboutUsText>
             <Heading2>Domain Activities Offered: </Heading2>
             <Body2>Explore our wide range of domain related activities designed to enhance your skills and knowledge</Body2>
 
@@ -114,9 +89,7 @@ const AboutUs = () => {
             </Body2>
           </AboutUsText>
         </AboutUsBox3>
-
         <AboutUsImage
-          reverse
           src='https://res.cloudinary.com/dafdencvh/image/upload/v1693048472/kerbero%20project/image_3_qyip8s.png '
           alt='Right Image'
         />

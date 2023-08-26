@@ -1,7 +1,6 @@
 import { useState } from 'react';
-//import { Icon } from '@iconify/react';
 import { FaqItemContainer, Answer, ArrowIcon } from './style';
-import arrowDown from '@iconify/icons-uil/arrow-down';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const FaqItem = ({ faq }) => {
   const [isActive, setIsActive] = useState(false);
@@ -13,7 +12,9 @@ const FaqItem = ({ faq }) => {
     <FaqItemContainer className={isActive ? 'active' : ''} onClick={toggleFaq}>
       <div>
         {faq.question}
-        <ArrowIcon icon={arrowDown} isActive={isActive} />
+        <ArrowIcon isActive={isActive}>
+          <ArrowDropDownIcon />
+        </ArrowIcon>
       </div>
       <Answer active={isActive}>{faq.answer}</Answer>
     </FaqItemContainer>

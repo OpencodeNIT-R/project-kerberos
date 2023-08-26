@@ -8,7 +8,7 @@ const FaqComponent = () => {
   return (
     <FaqContainer>
       <FaqHeading>Faqs</FaqHeading>
-      <Caption>Ask whatever you want</Caption>
+      <Caption>Find answers to community asked questions about the club and its service</Caption>
       <FaqLayout>
         {faqs.map((faq, index) => (
           <FaqItem key={index} faq={faq} />

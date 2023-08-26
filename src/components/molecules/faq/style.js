@@ -10,12 +10,13 @@ export const FaqContainer = styled.div`
 
 export const FaqHeading = styled.div`
   font-weight: 700;
-  font-size: 54px;
+  font-size: 56px;
   font-family: Roboto;
   font-style: normal;
   text-align: left;
   padding-right: 25px;
   margin-bottom: 160px;
+  line-height: 130.187%;
 
   @media (max-width: 768px) {
     font-size: 36px;
@@ -25,7 +26,7 @@ export const FaqHeading = styled.div`
 `;
 
 export const Caption = styled.div`
-  margin-bottom: 116px;
+  margin-bottom: 114px;
   font-size: 24px;
   text-align: left;
   font-syle: normal;

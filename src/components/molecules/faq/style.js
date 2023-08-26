@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
- export const FaqContainer = styled.div`
+export const FaqContainer = styled.div`
   padding: 25px;
 
   @media (max-width: 768px) {
@@ -9,32 +9,27 @@ import styled from 'styled-components';
 `;
 
 export const FaqHeading = styled.div`
-font-weight: 700;
-font-size: 54px;
-font-family:Roboto;
-font-style:normal;
-text-align: left; 
-padding-right: 25px; 
-margin-bottom:160px;
+  font-weight: 700;
+  font-size: 54px;
+  font-family: Roboto;
+  font-style: normal;
+  text-align: left;
+  padding-right: 25px;
+  margin-bottom: 160px;
 
-@media (max-width: 768px) {
-  font-size: 36px;
-  padding-right: 15px; 
-  margin-bottom:80px;
-}
+  @media (max-width: 768px) {
+    font-size: 36px;
+    padding-right: 15px;
+    margin-bottom: 80px;
+  }
 `;
 
-
-
-
-
 export const Caption = styled.div`
- margin-bottom:116px;
-    font-size: 24px;
-    text-align:left;
-    font-syle:normal;
-    font-family: Roboto;
-
+  margin-bottom: 116px;
+  font-size: 24px;
+  text-align: left;
+  font-syle: normal;
+  font-family: Roboto;
 `;
 
 export const FaqLayout = styled.div`
@@ -61,14 +56,14 @@ export const FaqItem = styled.div`
   &.active {
     background-color: #d9d9d9;
   }
-  > div:first-child { 
-    text-align: left; 
+  > div:first-child {
+    text-align: left;
   }
 `;
 
 export const Answer = styled.div`
   font-size: 22px;
   padding-top: 16px;
-  display: ${(props) => (props.active ? 'block' : 'none')};
-  text-align:left;
+  display: ${props => (props.active ? 'block' : 'none')};
+  text-align: left;
 `;

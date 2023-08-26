@@ -20,10 +20,6 @@ const Playground = () => {
       </Container>
       <Faq />
       <MentorCarousel />
-    
-
-
-      
     </>
   );
 };

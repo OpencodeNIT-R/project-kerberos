@@ -1,10 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import { useState } from 'react';
 import { FaqItemContainer, Answer } from './style';
-
-//const FaqItem = ({ faq, isActive, onClick }) => {
-// return (
-//  <FaqItemContainer className={isActive ? 'active' : ''} onClick={onClick}>
 
 const FaqItem = ({ faq }) => {
   const [isActive, setIsActive] = useState(false);
@@ -19,5 +14,4 @@ const FaqItem = ({ faq }) => {
     </FaqItemContainer>
   );
 };
-
 export default FaqItem;

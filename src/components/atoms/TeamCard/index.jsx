@@ -1,7 +1,5 @@
-import Body3 from '../../shared/Typography/Body3';
-import { Socials, TeamCards, Wrapper } from './styles';
-import { Links } from './styles';
-import Heading4 from '../../shared/Typography/Heading4';
+import { Socials, TeamCards, Wrapper, Links } from './styles';
+import { Heading4, Body3 } from '../../shared/Typography/Heading4';
 import { TeamData } from '../../../data/TeamCardData/TeamData';
 import { Icon } from '@iconify/react';
 

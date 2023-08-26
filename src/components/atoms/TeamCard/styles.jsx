@@ -43,7 +43,7 @@ export const TeamCards = styled.div`
   row-gap: 40px;
 `;
 
-export const Heading = styled.div`
+export const Headline = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

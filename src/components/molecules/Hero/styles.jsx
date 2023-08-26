@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import wallpaper from './wallpaper.png';
 
 export const HeroWrapper = styled.div `
   background-image: url(${wallpaper});

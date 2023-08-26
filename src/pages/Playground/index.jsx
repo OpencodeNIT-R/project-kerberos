@@ -1,18 +1,9 @@
-
-
-import { Container } from './styles';
-
-
+import Hero from '../../components/molecules/Hero/Hero'
 
 const Playground = () => {
-  return (
-    
-      <Container>
-       
-      </Container>
-       
-   
-  );
+    return (<>
+        <Hero/>
+    </>);
 };
 
 export default Playground;

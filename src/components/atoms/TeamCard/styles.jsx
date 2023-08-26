@@ -15,12 +15,6 @@ export const Image = styled.img`
   border-radius: 16px;
 `;
 
-export const MeetTheTeam = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
 export const Links = styled.a`
   color: black;
 `;
@@ -39,14 +33,6 @@ export const TeamCards = styled.div`
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-around;
-  column-gap: 40px;
+  column-gap: 60px;
   row-gap: 40px;
-`;
-
-export const Headline = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 7%;
-  gap: 24px;
 `;

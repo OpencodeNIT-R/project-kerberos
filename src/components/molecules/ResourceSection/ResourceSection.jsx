@@ -24,17 +24,17 @@ const SectionHeading = styled(Heading1)`
 const ResourceItem = styled.div`
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  //overflow-y: scroll;
   gap: 25px;
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
+  position: relative;
+  //&::-webkit-scrollbar {
+  //  display: none;
+  //}
 
   @media (min-width: 920px) {
     gap: 64px;
     min-width: 600px;
-    height: 600px;
+    //max-height: 600px;
   }
 `;
 
@@ -54,7 +54,16 @@ const ResourceSectionContainer = styled.div`
 
 const MainContainer = styled.div`
   width: 100%;
-  height: 800px;
+  max-height: 800px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 524px) {
+    max-height: 325px;
+  }
 `;
 
 const STAGES = {

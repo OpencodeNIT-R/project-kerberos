@@ -5,16 +5,21 @@ const ResourceNavContainer = styled.div`
     gap: 0;
     justify-content: space-evenly;
     width: 100%;
+    margin-bottom: 30px;
   }
+  position: sticky;
+  z-index: 200;
+  background: #cdcdcd;
+  top: -1px;
+  left: 0;
   width: 100%;
-  background: transparent;
+  margin-top: 0;
   margin-bottom: 70px;
   border-bottom: 2px solid #000;
   display: flex;
   gap: 100px;
   align-items: center;
   justify-content: flex-start;
-
   &:hover {
     cursor: pointer;
   }

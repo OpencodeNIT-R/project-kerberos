@@ -1,5 +1,5 @@
 import { MeetTheTeam, Headline } from '../../atoms/TeamCard/styles';
-import { Heading4, Heading1 } from '../../shared/Typography/Heading4';
+import { Heading4, Heading1 } from '../../shared/Typography';
 import TeamCard from '../../atoms/TeamCard';
 
 const TeamSection = () => {

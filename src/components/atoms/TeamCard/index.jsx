@@ -1,5 +1,5 @@
 import { Socials, TeamCards, Wrapper, Links } from './styles';
-import { Heading4, Body3 } from '../../shared/Typography/Heading4';
+import { Heading4, Body3 } from '../../shared/Typography';
 import { TeamData } from '../../../data/TeamCardData/TeamData';
 import { Icon } from '@iconify/react';
 

@@ -5,4 +5,6 @@ const Playground = () => {
     return (<>
         <Hero/>
     </>);
+};
+
 export default Playground;

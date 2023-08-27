@@ -5,14 +5,14 @@ export const HeroWrapper = styled.div`
   background-image: url(${wallpaper});
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-repeat: no-repeat; 
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media (max-width: 768px) {
-    background-size: 100% auto; /* Adjust to fit the entire width without cutting off */
+    background-size: 100% auto; 
   }
 `;
 
@@ -21,10 +21,7 @@ export const HeroContent = styled.div`
   color: #fff;
   padding: 2rem;
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
+ 
 
   img {
     max-width: 100%;
@@ -36,9 +33,6 @@ export const HeroContent = styled.div`
     background-size: 100% auto;
     
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
+    
   }
 `;

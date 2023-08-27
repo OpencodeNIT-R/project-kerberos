@@ -17,7 +17,7 @@ export const FaqItemContainer = styled.div`
   border: 1.5px solid #000;
 
   &.active {
-    background-color: #d9d9d9;
+    background-color: #ffffff;
     height: auto;
     padding: 24px;
     transform: translateY(-5px);

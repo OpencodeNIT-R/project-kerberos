@@ -1,10 +1,10 @@
-import AboutUs from '../../components/atoms/AboutUs/Aboutus';
+import ResourceSection from '../../components/molecules/ResourceSection/ResourceSection.jsx';
+
 const Playground = () => {
   return (
     <>
-    <AboutUs />
+    <ResourceSection />
     </>
   );
-};
 
 export default Playground;

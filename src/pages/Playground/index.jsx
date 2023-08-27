@@ -1,6 +1,7 @@
-import Contact from '../../components/molecules/Contact/Contact';
+import ResourceSection from '../../components/molecules/ResourceSection/ResourceSection.jsx';
+
 const Playground = () => {
-  return <Contact></Contact>;
+  return <ResourceSection />;
 };
 
 export default Playground;

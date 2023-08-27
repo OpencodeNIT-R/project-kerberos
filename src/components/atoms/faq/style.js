@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
 export const FaqItemContainer = styled.div`
-  //background-color: #f0f0f0;
-  //background-color: rgba(240, 240, 240, ${props => (props.isActive ? '1' : '0.5')});
   background-color: ${props => (props.isActive ? 'white' : 'rgba(240, 240, 240, 0.5)')};
   width: 100%;
   display: flex;

@@ -1,6 +1,6 @@
 import faqData from '../../../data/faq';
 import FaqItem from '../../atoms/faq/FaqItem';
-import { FaqContainer, FaqHeading, Caption, FaqLayout } from './style';
+import { FaqContainer, FaqHeading, Caption, FaqLayout, Caption2, Caption3, Caption4 } from './style';
 
 const FaqComponent = () => {
   const faqs = Object.values(faqData);
@@ -14,6 +14,9 @@ const FaqComponent = () => {
           <FaqItem key={index} faq={faq} />
         ))}
       </FaqLayout>
+      <Caption2>Still Have Questions?</Caption2>
+      <Caption3>Feel free to reach out to us for more information.</Caption3>
+      <Caption4>Contact</Caption4>
     </FaqContainer>
   );
 };

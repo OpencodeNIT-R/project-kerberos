@@ -1,12 +1,9 @@
-
 import Navbar from '../../components/shared/Navbar';
-
 const Playground = () => {
   return (
     <>
-      <Navbar />
+   <Navbar />
     </>
-
   );
 };
 

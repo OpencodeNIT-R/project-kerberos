@@ -5,8 +5,8 @@ import Footer from '../../components/partials/footer/Footer';
 const Playground = () => {
   return (
     <>
-       <Faq />
-     <TeamSection />
+      <TeamSection />
+      <Faq />
       <Footer />
     </>
   );

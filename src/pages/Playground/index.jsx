@@ -3,12 +3,13 @@
 // import Footer from '../../components/partials/footer/Footer';
 // import Navbar from "../../components/shared/Navbar/index.jsx";
 // import ResourceSection from "../../components/molecules/ResourceSection/ResourceSection.jsx";
-import HeroSection from '../../components/molecules/HeroSection/HeroSection.jsx';
+//import HeroSection from '../../components/molecules/HeroSection/HeroSection.jsx';
+import Aboutus from '../../components/atoms/AboutUs/Aboutus.jsx';
 
 const Playground = () => {
   return (
     <>
-      <HeroSection />
+      <Aboutus />
     </>
   );
 };

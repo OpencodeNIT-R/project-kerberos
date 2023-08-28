@@ -1,13 +1,9 @@
-import Faq from '../../components/molecules/faq/faq';
-import TeamSection from '../../components/molecules/TeamCard';
-import Footer from '../../components/partials/footer/Footer';
+import Contact from '../../components/molecules/Contact/Contact';
 
 const Playground = () => {
   return (
     <>
-      <TeamSection />
-      <Faq />
-      <Footer />
+      <Contact />
     </>
   );
 };

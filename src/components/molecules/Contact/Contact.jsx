@@ -1,11 +1,7 @@
 import ContactSection from './ContactSection';
 
 const Contact = () => {
-  return (
-    <div className='container'>
-      <ContactSection />
-    </div>
-  );
+  return <ContactSection />;
 };
 
 export default Contact;

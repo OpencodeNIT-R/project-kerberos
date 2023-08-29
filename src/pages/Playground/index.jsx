@@ -1,9 +1,9 @@
-import Contact from '../../components/molecules/Contact/Contact';
+import ContactSection from '../../components/molecules/Contact';
 
 const Playground = () => {
   return (
     <>
-      <Contact />
+      <ContactSection />
     </>
   );
 };

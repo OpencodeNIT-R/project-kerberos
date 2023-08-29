@@ -4,12 +4,12 @@
 // import Navbar from "../../components/shared/Navbar/index.jsx";
 // import ResourceSection from "../../components/molecules/ResourceSection/ResourceSection.jsx";
 //import HeroSection from '../../components/molecules/HeroSection/HeroSection.jsx';
-import Aboutus from '../../components/atoms/AboutUs/Aboutus.jsx';
+import AboutUsSection from '../../components/molecules/AboutSection/AboutUs.jsx';
 
 const Playground = () => {
   return (
     <>
-      <Aboutus />
+      <AboutUsSection />
     </>
   );
 };

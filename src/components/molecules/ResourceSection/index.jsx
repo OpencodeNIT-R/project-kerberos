@@ -68,12 +68,8 @@ const ResourceSectionContainer = styled.div`
 const MainContainer = styled.div`
   width: 100%;
   max-height: 800px;
-  overflow-y: scroll;
+  overflow: hidden;
   position: relative;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
 
   @media (min-width: ${props => props.theme.breakpoints.sm}) {
     max-width: 625px;

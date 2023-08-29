@@ -96,7 +96,7 @@ export const Buttondiv = styled.div`
 `;
 
 export const Navopen = styled.div`
-  z-index: 100;
+  z-index: 10000;
   position: fixed;
   top: 100px;
   height: calc(100vh - 100px);
@@ -106,7 +106,6 @@ export const Navopen = styled.div`
   padding-right: 7vh;
   background-color: #2a2a2a;
   margin-top: 0;
-  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;

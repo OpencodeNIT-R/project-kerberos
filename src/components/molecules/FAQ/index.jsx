@@ -7,7 +7,7 @@ const FaqComponent = () => {
   const faqs = Object.values(faqData);
 
   return (
-    <FaqContainer>
+    <FaqContainer id='faqs'>
       <FaqHeading>Faqs</FaqHeading>
       <Caption>Find answers to community asked questions about the club and its service</Caption>
       <FaqLayout>

@@ -125,7 +125,7 @@ export default function ResourceSection() {
   };
 
   return (
-    <ResourceSectionContainer>
+    <ResourceSectionContainer id='resources'>
       <MainContainer>
         <SectionHeading>Resources</SectionHeading>
         <ResourceNavbar navItems={navItems} stage={stage} />

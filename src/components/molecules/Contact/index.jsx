@@ -6,7 +6,7 @@ import { Container, Content, SocialItemContainer } from './styles';
 
 const ContactSection = () => {
   return (
-    <Container>
+    <Container id='contact'>
       <Heading2>{contactData.title}</Heading2>
       <Body2>{contactData.description}</Body2>
 

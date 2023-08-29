@@ -97,7 +97,9 @@ export const Buttondiv = styled.div`
 
 export const Navopen = styled.div`
   z-index: 100;
-  height: 100vh;
+  position: fixed;
+  top: 100px;
+  height: calc(100vh - 100px);
   font-family: Roboto, sans-serif;
   font-size: 2.5vh;
   width: 100vw;

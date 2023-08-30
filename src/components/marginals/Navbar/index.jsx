@@ -29,7 +29,7 @@ const Navbar = () => {
     <>
       <NavContainer>
         <NavChild>
-          <Logo src='/images/Navbar/logo.png' alt='logo' />
+          <Logo src='https://res.cloudinary.com/dhnkuonev/image/upload/v1693384151/updated_2x_uj3s2i.png' alt='logo' />
           <Content>
             {navItems.map(item => (
               <List key={item.title}>

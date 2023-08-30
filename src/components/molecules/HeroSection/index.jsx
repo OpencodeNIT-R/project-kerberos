@@ -21,9 +21,11 @@ const MainContainer = styled.div`
   flex-direction: column;
   gap: 12px;
   align-items: flex-start;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   @media (min-width: 768px) {
     width: 72%;
-    gap: 88px;
+    gap: 20px;
     margin: auto;
     align-items: center;
   }
@@ -40,6 +42,8 @@ const SubContainer = styled.div`
     align-items: center;
     justify-content: center;
   }
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 `;
 
 const UpperContainer = styled.div`
@@ -48,7 +52,10 @@ const UpperContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 0;
+  margin-top: 5%;
   align-items: flex-start;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   @media (min-width: 768px) {
     align-items: center;
   }
@@ -61,12 +68,16 @@ const LowerContainer = styled.div`
   justify-content: center;
   gap: 12px;
   align-items: flex-start;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   @media (min-width: 768px) {
     align-items: center;
     gap: 24px;
   }
 `;
 const Head1 = styled(Heading1)`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   color: #fff;
   text-align: left;
   font-size: 40px;
@@ -78,6 +89,8 @@ const Head1 = styled(Heading1)`
 `;
 
 const Head2 = styled(Heading2)`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   color: #fff;
   text-align: left;
   font-size: 40px;
@@ -89,6 +102,8 @@ const Head2 = styled(Heading2)`
   }
 `;
 const Head3 = styled(Heading3)`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   color: #fff;
   text-align: left;
   @media (min-width: 768px) {
@@ -96,6 +111,8 @@ const Head3 = styled(Heading3)`
   }
 `;
 const Body = styled(Body3)`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   color: #fff;
   text-align: left;
   @media (min-width: 768px) {
@@ -125,7 +142,11 @@ export default function HeroSection() {
           </Body>
           <SubContainer>
             {HeroData.sub.map(item => {
-              return <Head3 key={item.id}>{item.text}</Head3>;
+              return (
+                <Head3 key={item.id} semibold>
+                  {item.text}
+                </Head3>
+              );
             })}
           </SubContainer>
           <Button variant='primary' text={HeroData.buttonText} style={{ fontSize: '24px', padding: '16px 24px' }} />

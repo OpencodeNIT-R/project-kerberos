@@ -8,7 +8,7 @@ const ResourceData = {
       image: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1692895439/Frame_24_cjrv1x.png',
       alt: 'What Does AI Mean for All of Us?',
       description: 'ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo.',
-      link: 'https://www.google.com',
+      link: 'https://drive.google.com/file/d/1ae7RygLEBxeE4uOOgIE8-MBYN9hYx2rn/view?usp=sharing',
     },
     {
       id: 2,

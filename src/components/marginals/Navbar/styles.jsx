@@ -14,7 +14,7 @@ export const NavContainer = styled.nav`
   backdrop-filter: blur(25px);
   align-items: center;
   display: flex;
-  padding: 0 1vw 0 1vw;
+  padding: 0 4vw 0 1vw;
   font-family: Roboto, sans-serif;
   font-weight: 400;
 
@@ -22,14 +22,13 @@ export const NavContainer = styled.nav`
     box-shadow:
       0px 11px 12px 0px rgba(0, 0, 0, 0.15) inset,
       11px -10px 25px 10px rgba(255, 255, 255, 0.3) inset;
-
-    padding-right: 5vh;
+    padding-right: 4vw;
   }
 `;
 export const Logo = styled.img`
   width: 400px;
   @media (max-width: 913px) {
-    width: 250px;
+    width: 200px;
     height: auto;
   }
 `;

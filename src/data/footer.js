@@ -2,11 +2,11 @@ export const footerData = {
   imageLink: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693125195/Frame_34_dnqsdi.png',
   alt: 'footerlogo',
   siteLinks: [
-    { Id: 1, title: 'About', link: 'https://www.youtube.com' },
-    { Id: 2, title: 'Team', link: 'https://www.youtube.com' },
-    { Id: 3, title: 'Newsletter', link: 'https://www.youtube.com' },
-    { Id: 4, title: 'FAQs', link: 'https://www.youtube.com' },
-    { Id: 5, title: 'Contacts', link: 'https://www.youtube.com' },
+    { Id: 1, title: 'About', link: 'about' },
+    { Id: 2, title: 'Team', link: 'team' },
+    { Id: 3, title: 'Newsletter', link: 'news' },
+    { Id: 4, title: 'FAQs', link: 'faqs' },
+    { Id: 5, title: 'Contacts', link: 'contact' },
   ],
   socialLinks: [
     {

@@ -103,12 +103,12 @@ export default function ResourceSection() {
 
   const navItems = [
     {
-      title: 'Casebook',
+      title: 'Consulting',
       setStage: setStageToCasebook,
       key: STAGES.casebook,
     },
     {
-      title: 'Casedesk',
+      title: 'Analytics',
       setStage: setStageToCasedesk,
       key: STAGES.casedesk,
     },

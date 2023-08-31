@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Heading2 from '../../shared/Typography/Heading2.jsx';
 import HeroData from '../../../data/HeroData.js';
 import { Body3, Button, Heading1, Heading3 } from '../../shared/index.js';
+import React from 'react';
 
 const HeroSectionContainer = styled.div`
   width: 100%;
@@ -119,6 +120,15 @@ const Body = styled(Body3)`
     text-align: center;
   }
 `;
+
+const Circle = styled.span`
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 2px;
+`;
 export default function HeroSection() {
   return (
     <HeroSectionContainer>
@@ -141,13 +151,12 @@ export default function HeroSection() {
             {HeroData.subtitle5}
           </Body>
           <SubContainer>
-            {HeroData.sub.map(item => {
-              return (
-                <Head3 key={item.id} semibold>
-                  {item.text}
-                </Head3>
-              );
-            })}
+            {HeroData.sub.map((item, index) => (
+              <React.Fragment key={item.id}>
+                <Head3 semibold>{item.text}</Head3>
+                {index !== HeroData.sub.length - 1 && <Circle />}
+              </React.Fragment>
+            ))}
           </SubContainer>
           <Button variant='primary' text={HeroData.buttonText} style={{ fontSize: '24px', padding: '16px 24px' }} />
         </LowerContainer>

@@ -5,6 +5,12 @@ import { FaqContainer, FaqHeading, Caption, FaqLayout, Caption2, Caption3 } from
 
 const FaqComponent = () => {
   const faqs = Object.values(faqData);
+  const email = 'anc.nitr@gmail.com';
+  const subject = 'Inquiry from Website';
+
+  const handleClick = () => {
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+  };
 
   return (
     <FaqContainer id='faqs'>
@@ -17,7 +23,7 @@ const FaqComponent = () => {
       </FaqLayout>
       <Caption2>Still Have Questions?</Caption2>
       <Caption3>Feel free to reach out to us for more information.</Caption3>
-      <Button text={'Contact Us'} style={{ marginTop: '30px' }} variant={'outline'} />
+      <Button text={'Contact Us'} style={{ marginTop: '30px' }} variant={'outline'} onClick={handleClick} />
     </FaqContainer>
   );
 };

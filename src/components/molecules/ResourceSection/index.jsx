@@ -67,7 +67,7 @@ const ResourceSectionContainer = styled.div`
 
 const MainContainer = styled.div`
   width: 100%;
-  max-height: 800px;
+  max-height: 1200px;
   overflow: hidden;
   position: relative;
 

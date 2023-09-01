@@ -5,7 +5,7 @@ export const TeamData = [
     imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376346/Screenshot_20230823_162711_Instagram_ebfri5.jpg',
     achievements: 'Ex- IIM Lucknow Intern',
     Instagram: '',
-    LinkedIn: '',
+    LinkedIn: 'https://www.linkedin.com/in/saranya-mishra-84b98824a/',
     Twitter: '',
   },
   {
@@ -14,7 +14,7 @@ export const TeamData = [
     imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376345/IMG_20230822_171631_hrj6ja.jpg',
     achievements: 'Ex-IIM Calcutta Intern',
     Instagram: '',
-    LinkedIn: '',
+    LinkedIn: 'https://www.linkedin.com/in/b-achyut-38a049225/',
     Twitter: '',
   },
   {
@@ -23,7 +23,7 @@ export const TeamData = [
     imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376345/IMG_7545_eedah7.jpg',
     achievements: 'Intern, Emertxe',
     Instagram: '',
-    LinkedIn: '',
+    LinkedIn: 'https://www.linkedin.com/in/prachuit-priyadarshi-sahoo-884876189/',
     Twitter: '',
   },
   {
@@ -32,7 +32,7 @@ export const TeamData = [
     imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693384437/sms_vx3ja1.jpg',
     achievements: 'Ex-IIM Lucknow Intern',
     Instagram: '',
-    LinkedIn: '',
+    LinkedIn: 'https://www.linkedin.com/in/shashank-mani-singh-b2688425b/',
     Twitter: '',
   },
   {
@@ -41,16 +41,16 @@ export const TeamData = [
     imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376346/Sambeda_Nayak_bcicfy.jpg',
     achievements: 'IIT Guwahati Intern',
     Instagram: '',
-    LinkedIn: '',
+    LinkedIn: 'https://www.linkedin.com/in/sambeda-nayak-468084203/',
     Twitter: '',
   },
   {
     name: 'Abhidi Gupta',
     Position: 'Content Head',
-    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376349/IMG20230621154521_yt6ugv.jpg',
+    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693539505/1687754827870_wt3vkh.jpg',
     achievements: 'Ex-IIM Calcutta Intern',
     Instagram: '',
-    LinkedIn: '',
+    LinkedIn: 'https://www.linkedin.com/in/abhidi-gupta-422618236/',
     Twitter: '',
   },
   {
@@ -59,7 +59,7 @@ export const TeamData = [
     imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376348/luikdb_bgp0id.jpg',
     achievements: 'Ex-ML Intern - Feynn Labs',
     Instagram: '',
-    LinkedIn: '',
+    LinkedIn: 'https://www.linkedin.com/in/luikdb/',
     Twitter: '',
   },
   {
@@ -68,7 +68,7 @@ export const TeamData = [
     imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376354/Premjeet_Parida_bdl3df.jpg',
     achievements: 'IIMB Strategy Intern, Ex-Intern Blackbuck',
     Instagram: '',
-    LinkedIn: '',
+    LinkedIn: 'https://www.linkedin.com/in/premjeet-parida-/',
     Twitter: '',
   },
 ];

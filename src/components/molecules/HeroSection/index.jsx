@@ -128,6 +128,11 @@ const Circle = styled.span`
   border-radius: 50%;
   background-color: #fff;
   margin: 0 2px;
+  @media (max-width: 768px) {
+    margin: 6px 2px;
+    width: 5px;
+    height: 5px;
+  }
 `;
 export default function HeroSection() {
   return (

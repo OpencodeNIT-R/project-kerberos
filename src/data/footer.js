@@ -12,17 +12,17 @@ export const footerData = {
     {
       Id: 1,
       name: 'instagram',
-      link: 'https://www.instagram.com',
+      link: 'https://www.instagram.com/anc.nitr',
     },
     {
       Id: 1,
       name: 'linkedin',
-      link: 'https://www.linkedin.com',
+      link: 'https://www.linkedin.com/company/analytics-and-consulting-club/',
     },
-    {
-      Id: 1,
-      name: 'ri:twitter-x-fill',
-      link: 'https://www.x.com',
-    },
+    // {
+    //   Id: 1,
+    //   name: 'ri:twitter-x-fill',
+    //   link: 'https://www.x.com',
+    // },
   ],
 };

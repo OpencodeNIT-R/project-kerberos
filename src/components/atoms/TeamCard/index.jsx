@@ -11,15 +11,15 @@ const TeamCard = ({ TeamMember }) => {
         <Body3>{TeamMember.Position}</Body3>
         <Body4>{TeamMember.achievements}</Body4>
         <Socials>
-          <Links href={TeamMember.Instagram}>
+          {/* <Links href={TeamMember.Instagram}>
             <Icon icon='mdi:instagram' width='30' height='30' />
-          </Links>
+          </Links> */}
           <Links href={TeamMember.LinkedIn}>
             <Icon icon='mdi:linkedin' width='30' height='30' />
           </Links>
-          <Links href={TeamMember.Twitter}>
+          {/* <Links href={TeamMember.Twitter}>
             <Icon icon='ri:twitter-x-fill' width='30' height='30' />
-          </Links>
+          </Links> */}
         </Socials>
       </Wrapper>
     </TeamCards>

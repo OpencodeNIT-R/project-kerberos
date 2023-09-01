@@ -14,7 +14,7 @@ const FaqComponent = () => {
 
   return (
     <FaqContainer id='faqs'>
-      <FaqHeading>Faqs</FaqHeading>
+      <FaqHeading>FAQs</FaqHeading>
       <Caption>Find answers to community asked questions about the club and its service</Caption>
       <FaqLayout>
         {faqs.map((faq, index) => (

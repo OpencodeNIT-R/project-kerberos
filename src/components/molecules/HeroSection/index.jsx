@@ -144,7 +144,7 @@ export default function HeroSection() {
             <span style={{ color: '#52CD00', lineHeight: '60px' }}>{HeroData.heading2}</span>
             {HeroData.heading3}
             <span style={{ color: '#52CD00', lineHeight: '60px' }}>{HeroData.heading4}</span>
-            {HeroData.heading5}
+            <span style={{ lineHeight: '60px' }}>{HeroData.heading5}</span>
           </Head1>
         </UpperContainer>
         <LowerContainer>

@@ -39,7 +39,7 @@ export const TeamData = [
     name: 'Sambeda Nayak',
     Position: 'Secretary',
     imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693376346/Sambeda_Nayak_bcicfy.jpg',
-    achievements: 'IIT Guwahati Intern',
+    achievements: 'Ex - IIT Guwahati Intern',
     Instagram: '',
     LinkedIn: 'https://www.linkedin.com/in/sambeda-nayak-468084203/',
     Twitter: '',
@@ -47,7 +47,7 @@ export const TeamData = [
   {
     name: 'Abhidi Gupta',
     Position: 'Content Head',
-    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693539505/1687754827870_wt3vkh.jpg',
+    imagesrc: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1693550430/Abhidi_Gupta_fnfpyt.jpg',
     achievements: 'Ex-IIM Calcutta Intern',
     Instagram: '',
     LinkedIn: 'https://www.linkedin.com/in/abhidi-gupta-422618236/',

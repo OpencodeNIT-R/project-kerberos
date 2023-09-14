@@ -5,6 +5,7 @@ import { Body3, Button, Heading1, Heading3 } from '../../shared/index.js';
 import React from 'react';
 import { Link } from 'react-scroll';
 
+
 const HeroSectionContainer = styled.div`
   width: 100%;
   height: 100vh;

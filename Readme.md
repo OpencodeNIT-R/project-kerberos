@@ -2,8 +2,8 @@
 
 Analytics and Consulting club website of NIT Rourkela
 
-
 # About The Project
+
 Following technologies and libraries are used for the development of this project.
 
 - [React](https://reactjs.org/)

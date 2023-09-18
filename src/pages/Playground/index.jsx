@@ -1,12 +1,7 @@
-import NewsLetterSection from '../../components/molecules/Newsletter';
-import { Container } from './styles';
+import ContactSection from '../../components/molecules/Contact';
 
 const Playground = () => {
-  return (
-    <Container>
-      <NewsLetterSection />
-    </Container>
-  );
+  return <ContactSection />;
 };
 
 export default Playground;

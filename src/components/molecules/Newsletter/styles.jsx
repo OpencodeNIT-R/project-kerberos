@@ -3,16 +3,19 @@ import { styled } from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  margin: 0 auto;
   gap: 42px;
-  padding: 24px 0px;
+  padding: 16px;
+  max-width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     flex-direction: row;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
+    gap: 18px;
     padding: 20px 32px;
-    gap: 10px;
+    max-width: 1440px;
   }
 
   @media (min-width: ${props => props.theme.breakpoints.lg}) {

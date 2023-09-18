@@ -1,11 +1,11 @@
 import { Container, Content, TitleContainer } from './styles';
 import { Heading2, Heading4 } from '../../shared';
 import { featuredData } from '../../../data/featured';
-import Swiper from '../../atoms/newsletter/Swiper';
+import Swiper from '../../atoms/Newsletter/Swiper';
 
 const NewsLetterSection = () => {
   return (
-    <Container>
+    <Container id='news'>
       <TitleContainer>
         <Heading4 transform='uppercase'>
           Featured <span>This Week</span>

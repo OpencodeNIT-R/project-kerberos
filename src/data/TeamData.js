@@ -22,17 +22,6 @@ export const TeamData = [
     Twitter: '',
   },
   {
-    name: 'Siddhartha Sahu',
-    Position: 'Design Head',
-    imagesrc:
-      'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1718364971/WhatsApp_Image_2024-06-14_at_16.51.14_374ae203_oukjxl.jpg',
-    achievements: '',
-    Instagram: '',
-    LinkedIn:
-      'https://www.linkedin.com/in/siddhartha-sahu-0a3631244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-    Twitter: '',
-  },
-  {
     name: 'S Harikrishna Panicker',
     Position: 'Strategic Head',
     imagesrc:
@@ -52,6 +41,17 @@ export const TeamData = [
     Instagram: '',
     LinkedIn:
       'https://www.linkedin.com/in/laksh-garg-96871b257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    Twitter: '',
+  },
+  {
+    name: 'Siddhartha Sahu',
+    Position: 'Design Head',
+    imagesrc:
+      'https://res.cloudinary.com/dqbcbqcbr/image/upload/v1718364971/WhatsApp_Image_2024-06-14_at_16.51.14_374ae203_oukjxl.jpg',
+    achievements: '',
+    Instagram: '',
+    LinkedIn:
+      'https://www.linkedin.com/in/siddhartha-sahu-0a3631244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     Twitter: '',
   },
   {
